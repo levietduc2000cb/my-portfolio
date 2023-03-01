@@ -11,6 +11,8 @@ class MyDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <meta name="description" content="Porpolio" />
+          <meta name="keywords" content="Porpolio" />
         </Head>
         <body className="bg-gradient-to-r from-green to-blue-500 dark:from-dark-500 dark:to-dark-700 dark:text-white">
           <Main />

@@ -5,6 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import { Category, IProject } from "@/types";
 import { motion } from "framer-motion";
 import { fadeInUp, stagger, routeAnimation } from "@/animations";
+import Head from "next/head";
 
 const Projects = () => {
   const [projectsChoose, setProjectsChoose] =
@@ -34,6 +35,9 @@ const Projects = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Web Developer | Projects</title>
+      </Head>
       <ProjectsNavBar
         handlerFilterCategory={handlerFilterCategory}
         active={active}

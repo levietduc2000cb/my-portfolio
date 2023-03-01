@@ -8,6 +8,7 @@ import { IService } from "@/types";
 import ServiceCard from "@/components/ServiceCard";
 import { motion } from "framer-motion";
 import { fadeInUp, stagger, routeAnimation } from "@/animations";
+import Head from "next/head";
 
 export interface propsIndex {
   services: IService[];
@@ -21,6 +22,9 @@ const index = (props: propsIndex) => {
       initial="initial"
       animate="animate"
     >
+      <Head>
+        <title>Web Developer | Portfolio</title>
+      </Head>
       <h6 className="my-3 text-base font-medium">
         I am studying information technology at Thang Long University. I have
         little experience in web programming. I am trying to be a web developer

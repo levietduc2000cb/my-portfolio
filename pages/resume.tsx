@@ -2,6 +2,7 @@ import { languages, tools } from "@/data";
 import Bar from "@/components/Bar";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation } from "@/animations";
+import Head from "next/head";
 
 const resume = () => {
   return (
@@ -11,6 +12,9 @@ const resume = () => {
       initial="initial"
       animate="animate"
     >
+      <Head>
+        <title>Web Developer | Resume</title>
+      </Head>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
           <h5 className="my-3 text-2xl font-bold ">Education</h5>

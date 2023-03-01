@@ -35,6 +35,11 @@ const ProjectsNavBar = ({
         active={active}
       />
       <NavItem
+        value="html/css"
+        handlerFilterCategory={handlerFilterCategory}
+        active={active}
+      />
+      <NavItem
         value="react"
         handlerFilterCategory={handlerFilterCategory}
         active={active}
@@ -46,11 +51,6 @@ const ProjectsNavBar = ({
       />
       <NavItem
         value="express"
-        handlerFilterCategory={handlerFilterCategory}
-        active={active}
-      />
-      <NavItem
-        value="django"
         handlerFilterCategory={handlerFilterCategory}
         active={active}
       />
